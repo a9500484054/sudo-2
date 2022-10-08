@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/um-icon-style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 <body class="main-blue">
+    <input type="hidden" value="1" id="helper-input">
 
     <header class="header">
         <div class="header__wrap">
@@ -49,6 +51,7 @@
                     <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="menu__contact">
+                     
                     <li><a href="mailto:info@sudo.team">info@sudo.team</a></li>
                 </ul>
             </nav>
@@ -80,18 +83,33 @@
     </header>
 
 
-    <main>
+    <main class="main">
 
-        <section class="hero">
+        <section class="card-box hero card-box--active">
             <div class="hero__wrap">
 
-                <h1>Разработка высокотехнологичных программных продуктов</h1>
+                <!-- <h1>Разраб отка высокотехнологичных программных продуктов</h1> -->
 
-                <span class="hero__elem">вниз</span>
+                <h1>
+                    <span class="title-js title-a">Разработка</span>
+                    <span class="title-js title-b">высокотехнологичных</span> 
+                    <span class="title-js title-c">программных продуктов</span>
+                </h1>
+
+                <!-- <span class="hero__elem">вниз</span> -->
+
+                <div class="hero__el">
+                    <span class="hero__el--arrow"></span>
+                    <span class="hero__el--text">вниз</span>
+                </div>
+                
             </div>
+            <!-- <div class="hero__img">
+                <img class="img-js" src="images/svg/sudo.png" alt="">
+            </div> -->
         </section>
 
-        <section class="index-about">
+        <section class="card-box index-about">
             <div class="index-about__wrap">
                 <div class="index-about__block-one">
                     <h2>Судо –  быстрое решение для сложных вычислительных процессов </h2>
@@ -100,7 +118,7 @@
                     <p>
                         ООО «Судо» – IT-компания, основным видом деятельности которой является разработка программных продуктов. Наша специализация – разработка высокотехнологичных программ, оптимизация и ускорение сложных математических алгоритмов.
                     </p>
-                    <a class="btn btn--white" href="about.html">
+                    <a class="btn btn--white anime-1" href="about.html">
                         <span>Узнать больше</span>
                         <i class="icon-enter"></i>
                     </a>
@@ -108,43 +126,67 @@
             </div>
         </section>
 
-        <section class="index-block index-block--1">
+        <section class="card-box index-block index-block--1 anime-2">
             <div class="container">
                 <div class="index-block__wrap">
-                    <span>01 - 03</span>
-                    <p>Обучаемые системы автоматического анализа, расчёта и построения оптимальных технологических маршрутов с учётом большого числа входных оперативных параметров. Перенос вычисление на GPGPU. Оптимизация существующих решений.</p>
-                    <div class="index-block__btn-box">
+                    <span class="anime-3">01 - 03</span>
+                    <!-- <p>Обучаемые системы автоматического анализа, расчёта и построения оптимальных технологических маршрутов с учётом большого числа входных оперативных параметров. Перенос вычисление на GPGPU. Оптимизация существующих решений.</p> -->
+                    <ul class="list-2">
+                        <li class="list-2__item">Обучаемые системы автоматического анализа,</li>
+                        <li class="list-2__item">расчёта и построения оптимальных</li>
+                        <li class="list-2__item">технологических маршрутов с учётом большого</li>
+                        <li class="list-2__item">числа входных оперативных параметров.</li>
+                        <li class="list-2__item">Перенос вычисление на GPGPU. Оптимизация</li>
+                        <li class="list-2__item">существующих решений.</li>
+                    </ul>
+                    <div class="index-block__btn-box anime-4">
                         <button class="index-block__btn">Оставить заявку</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="index-block index-block--color-text index-block--2">
+        <section class="card-box index-block index-block--color-text index-block--2">
             <div class="container">
                 <div class="index-block__wrap ">
-                    <span>02 - 03</span>
-                    <p>Онлайн сервис построения диаграмм кривых перемагничивания первого порядка FORC. Поддержка различного оборудования, расширенный набор пред-процессинговых и аналитических функций, высокая скорость обработки данных.</p>
-                    <div class="index-block__btn-box">
+                    <span class="anime-5">02 - 03</span>
+                    <!-- <p>Онлайн сервис построения диаграмм кривых перемагничивания первого порядка FORC. Поддержка различного оборудования, расширенный набор пред-процессинговых и аналитических функций, высокая скорость обработки данных.</p> -->
+
+                    <ul class="list-3">
+                        <li class="list-3__item">Онлайн сервис построения диаграмм кривых</li>
+                        <li class="list-3__item">перемагничивания первого порядка FORC.</li>
+                        <li class="list-3__item">Поддержка различного оборудования,</li>
+                        <li class="list-3__item">расширенный набор пред-процессинговых и</li>
+                        <li class="list-3__item">аналитических функций, высокая скорость</li>
+                        <li class="list-3__item">обработки данных.</li>
+                    </ul>
+
+                    <div class="index-block__btn-box anime-6">
                         <button class="index-block__btn">Оставить заявку</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="index-block index-block--3">
+        <section class="card-box index-block index-block--3">
             <div class="container">
                 <div class="index-block__wrap">
-                    <span>03 - 03</span>
-                    <p>Сервисы для обработки и анализа изображений со сканирующих электронных микроскопов (SEM). Высокая точность и скорость обработки с использованием технологий машинного обучения </p>
-                    <div class="index-block__btn-box">
+                    <span class="anime-7" >03 - 03</span>
+                    <!-- <p>Сервисы для обработки и анализа изображений со сканирующих электронных микроскопов (SEM). Высокая точность и скорость обработки с использованием технологий машинного обучения </p> -->
+                    <ul class="list-4">
+                        <li class="list-4__item"> Сервисы для обработки и анализа изображений</li>
+                        <li class="list-4__item">со сканирующих электронных микроскопов</li>
+                        <li class="list-4__item">П(SEM). Высокая точность и скорость обработки с</li>
+                        <li class="list-4__item">использованием технологий машинного обучения</li>
+                    </ul>
+                    <div class="index-block__btn-box anime-8">
                         <button class="index-block__btn">Оставить заявку</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="index-benefits">
+        <section class="card-box index-benefits">
             <div class="container index-benefits__block">
                 <div class="index-benefits__block-1">
                     <h3 class="index-benefits__title">Наши преимущества</h3>
@@ -159,7 +201,7 @@
             </div>
         </section>
 
-        <section class="index-services">
+        <section class="card-box index-services">
             <div class="container index-services__block">
                 <div class="index-services__block-1">
                     <h3 class="mb-28">Услуги</h3>
@@ -201,7 +243,7 @@
             </div>
         </section>
 
-        <section class="index-mission">
+        <section class="card-box index-mission">
             <div class="container index-mission__block">
                 <div class="index-mission__text-animate">
                     <img class="index-mission__text-animate--1" src="images/svg/text.svg" alt="">
@@ -241,7 +283,7 @@
         </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer d-none">
         <div class="footer__wrap">
             <div class="footer__block">
                 <a class="logo footer__logo" href="#">
@@ -274,8 +316,13 @@
         </div>
 
     </footer>
-
+    <script src="libs/bezier.js"></script>
+    <script src="libs/swiped-events.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/animate.js"></script>
+
+
     <script>
 
     const indexBlockBbtn = document.querySelectorAll('.index-block__btn')

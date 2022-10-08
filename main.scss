@@ -74,6 +74,9 @@
 .mw-350 {
     max-width: 350px;
 }
+.mw-650 {
+    max-width: 650px;
+}
 
 .flex-mob {
     display: flex
@@ -129,7 +132,7 @@
 
 .re {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .re-list {
@@ -144,4 +147,8 @@
 
         }
     }
+}
+
+.blue {
+    color: #3858E4;
 }

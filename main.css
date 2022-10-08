@@ -1010,7 +1010,7 @@ input[type="radio"].visually-hidden {
   background: #3657C8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .header__menu-btn {
     display: none;
   }
@@ -1800,15 +1800,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.services__item:hover > .services__info {
-  opacity: 1;
-  background: rgba(56, 88, 228, 0.9);
-}
-
-.services__item:hover > .projects-card__title {
-  opacity: 0;
-}
-
 .services__img-2 {
   max-width: 800px;
 }
@@ -1820,7 +1811,8 @@ input[type="radio"].visually-hidden {
   padding: 44px 15px;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
+  background: rgba(56, 88, 228, 0.9);
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
 }
@@ -1853,6 +1845,10 @@ input[type="radio"].visually-hidden {
   color: #171616;
 }
 
+.projects-card__title {
+  opacity: 0;
+}
+
 @media (min-width: 768px) {
   .services__list {
     display: -webkit-box;
@@ -1875,11 +1871,21 @@ input[type="radio"].visually-hidden {
     opacity: 1;
     background: rgba(56, 88, 228, 0.9);
   }
+  .services__item:hover > .projects-card__title {
+    opacity: 0;
+  }
+  .services__info {
+    opacity: 0;
+    background: transparent;
+  }
   .services__info h4 {
     font-size: 20px;
   }
   __text {
     font-size: 18px;
+  }
+  .projects-card__title {
+    opacity: 1;
   }
 }
 
@@ -3243,6 +3249,10 @@ input[type="radio"].visually-hidden {
   max-width: 350px;
 }
 
+.mw-650 {
+  max-width: 650px;
+}
+
 .flex-mob {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3323,10 +3333,10 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
 }
 
 .re-list li {
@@ -3339,5 +3349,9 @@ input[type="radio"].visually-hidden {
   content: '—';
   position: absolute;
   left: -30px;
+}
+
+.blue {
+  color: #3858E4;
 }
 /*# sourceMappingURL=main.css.map */
