@@ -171,3 +171,5 @@ const init = () => {
 }
 
 init()
+
+// -document.querySelector('.hero').clientHeight
