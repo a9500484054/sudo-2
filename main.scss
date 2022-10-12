@@ -192,6 +192,10 @@
     color: #FFFFFF;
 }
 
+.d-none {
+    display: none;
+}
+
 @media (min-width: 768px) {
 
     .card-box__item-1 {
@@ -261,9 +265,7 @@
         color: #FFFFFF;
     }
 
-    .d-none {
-        display: none;
-    }
+
 
     .mob {
         display: none;

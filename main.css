@@ -3396,6 +3396,10 @@ input[type="radio"].visually-hidden {
   color: #FFFFFF;
 }
 
+.d-none {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .card-box__item-1 {
     font-size: 24px;
@@ -3454,9 +3458,6 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #FFFFFF;
-  }
-  .d-none {
-    display: none;
   }
   .mob {
     display: none;
