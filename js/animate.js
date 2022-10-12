@@ -153,7 +153,7 @@ const init = () => {
                 
                 setTimeout(() => {
                     helperInput.value = 1;
-                }, 500);
+                }, 2000);
             }
         } else {
             if(helperInput.value == '1') {
@@ -161,7 +161,7 @@ const init = () => {
                 showNextSlide();
                 setTimeout(() => {
                     helperInput.value = 1;
-                }, 500);
+                }, 2000);
             }
         }
     });
