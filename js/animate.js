@@ -94,8 +94,8 @@ const init = () => {
           document.querySelector('.services-block__nav-btn-r').click()
       }
 
-      setTimeout(clickBtn, 1000);
-      setTimeout(clickBtn, 2000);
+      setTimeout(clickBtn, 3000);
+      setTimeout(clickBtn, 6000);
     }
     if(slideCounter == 7) {
       console.log(slideCounter)

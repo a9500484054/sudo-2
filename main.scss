@@ -194,6 +194,28 @@
 
 @media (min-width: 768px) {
 
+    .card-box__item-1 {
+    
+       
+        font-size: 24px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+    .card-box__item-2 {
+        
+       
+        font-size: 24px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+    .card-box__item-3 {
+        
+       
+        font-size: 24px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+
     .hero__img {
         position: absolute;
         /* top:-178px; */
@@ -332,12 +354,40 @@
     }
 
 }
+
+
+@media (min-width: 1280px) {
+
+    .card-box__item-1 {
+    
+       
+        font-size: 28px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+    .card-box__item-2 {
+        
+       
+        font-size: 28px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+    .card-box__item-3 {
+        
+       
+        font-size: 28px;
+        line-height: 137%;
+        letter-spacing: 0.02em;
+    }
+}
+
 .anime-9 {
     animation-name: rotation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 
 @keyframes rotation {
     0% {
