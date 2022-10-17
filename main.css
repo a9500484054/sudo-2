@@ -1291,7 +1291,7 @@ input[type="radio"].visually-hidden {
 }
 
 .index-block__wrap {
-  padding-top: 209px;
+  padding-top: 35px;
 }
 
 .index-block span {
@@ -2471,24 +2471,41 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: 1280px) {
+.hidden-mob {
+  display: none;
+}
+
+@media (min-width: 1040px) {
   .container-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     grid-auto-rows: 1fr;
-    gap: 10px 100px;
+    gap: 10px 46px;
     grid-auto-flow: column;
-        grid-template-areas: ". ." ". .";
+        grid-template-areas: ". . . .";
   }
   .block-g {
     display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .block-g__title {
     height: 100px;
+  }
+  .hidden {
+    display: none;
+  }
+  .hidden-mob {
+    display: inline-block;
+  }
+  .h100 {
+    height: 70%;
   }
 }
 
@@ -3101,6 +3118,11 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.swiper-box {
+  position: relative;
+  overflow: hidden;
+}
+
 .footer {
   background: #171616;
 }
@@ -3363,6 +3385,10 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.tab {
+  display: block;
+}
+
 .dest-f,
 .dest {
   display: none;
@@ -3400,7 +3426,18 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
+  .mob {
+    display: none;
+  }
+  .tab {
+    display: block;
+  }
+  .tab-f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .card-box__item-1 {
     font-size: 24px;
     line-height: 137%;
@@ -3420,16 +3457,13 @@ input[type="radio"].visually-hidden {
     position: absolute;
     /* top:-178px; */
     left: 0;
-    bottom: -5px;
+    top: 10vh;
     /* transform: translate(-14px, -343px);
         scale: 14; */
   }
   .hero__img img {
     width: 100%;
     height: 100%;
-  }
-  .hero__wrap {
-    z-index: 22;
   }
   .hero__el {
     position: absolute;
@@ -3459,20 +3493,6 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     color: #FFFFFF;
   }
-  .mob {
-    display: none;
-  }
-  .dest {
-    display: block;
-  }
-  .dest-f {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .body--hidden {
-    overflow: hidden;
-  }
   .card-box {
     position: absolute;
     height: 100vh;
@@ -3485,6 +3505,7 @@ input[type="radio"].visually-hidden {
     height: 100vh;
     opacity: 0;
     z-index: 1;
+    display: none;
   }
   .card-box--default {
     position: static !important;
@@ -3492,6 +3513,7 @@ input[type="radio"].visually-hidden {
     z-index: 1 !important;
     -webkit-transform: translate(0, 0px) !important;
             transform: translate(0, 0px) !important;
+    display: block !important;
   }
   .index-block {
     background-size: cover;
@@ -3504,11 +3526,11 @@ input[type="radio"].visually-hidden {
     opacity: 1;
     top: 10vh;
     height: 90vh;
-    z-index: 12;
   }
   .card-box--active {
     opacity: 1;
     z-index: 11;
+    display: block;
   }
   .menu {
     z-index: 1;
@@ -3540,18 +3562,41 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 1280px) {
+  .body--hidden {
+    overflow: hidden;
+  }
+  .index-about {
+    padding-top: 6%;
+  }
+  .index-services {
+    height: 60vh;
+  }
+  .swiper-box {
+    padding-top: 10%;
+  }
+  .tab {
+    display: none;
+  }
+  .tab-f {
+    display: none;
+  }
+  .dest {
+    display: block;
+  }
+  .dest-f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .card-box__item-1 {
-    font-size: 28px;
     line-height: 137%;
     letter-spacing: 0.02em;
   }
   .card-box__item-2 {
-    font-size: 28px;
     line-height: 137%;
     letter-spacing: 0.02em;
   }
   .card-box__item-3 {
-    font-size: 28px;
     line-height: 137%;
     letter-spacing: 0.02em;
   }

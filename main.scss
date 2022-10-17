@@ -17,6 +17,7 @@
 @import "./scss/components/projects";
 @import "./scss/components/form";
 @import "./scss/components/modal-feedback";
+@import "./scss/components/swiper-index";
 @import "./scss/components/footer";
 // @import "./scss/components/features";
 // @import "./scss/components/whom";
@@ -158,6 +159,9 @@
     display: block;
 }
 
+.tab {
+    display: block;
+}
 .dest-f,
 .dest {
     display: none;
@@ -196,7 +200,19 @@
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
+    .mob {
+        display: none;
+    }
+    .tab {
+        display: block;
+    }
+    .tab-f {
+        display: flex;
+    }
+    
+    
+
 
     .card-box__item-1 {
     
@@ -224,7 +240,7 @@
         position: absolute;
         /* top:-178px; */
         left: 0;
-        bottom: -5px;
+        top: 10vh;
         /* transform: translate(-14px, -343px);
         scale: 14; */
     }
@@ -233,9 +249,9 @@
         height: 100%;
     }
 
-    .hero__wrap {
-        z-index: 22;
-    }
+    // .hero__wrap {
+    //     z-index: 22;
+    // }
 
     .hero__el {
         position: absolute;
@@ -267,20 +283,10 @@
 
 
 
-    .mob {
-        display: none;
-    }
-    
-    .dest {
-        display: block;
-    }
-    .dest-f {
-        display: flex;
-    }
 
-    .body--hidden {
-        overflow: hidden;
-    }
+
+
+
     .card-box {
     position: absolute;
     height: 100vh;
@@ -293,6 +299,7 @@
     height: 100vh;
     opacity: 0;
     z-index: 1;
+    display: none;
     }
 
     .card-box--default {
@@ -300,6 +307,7 @@
         opacity: 1 !important;
         z-index: 1 !important;
         transform: translate(0, 0px) !important;
+        display: block !important;
     }
 
     .index-block {
@@ -315,13 +323,14 @@
         opacity: 1;
         top: 10vh;
         height: 90vh;
-        z-index: 12;
+        // z-index: 12;
     }
 
 
     .card-box--active {
         opacity: 1;
         z-index: 11;
+        display: block;
     }
     .menu {
         z-index: 1;
@@ -343,9 +352,6 @@
         z-index: 13;
     }
 
-
-
-
     .wave-block {
         display: block;
         margin-bottom: 73px
@@ -360,24 +366,44 @@
 
 @media (min-width: 1280px) {
 
+    .body--hidden {
+        overflow: hidden;
+    }
+    .index-about {
+        padding-top: 6%;
+    }
+    .index-services {
+        height: 60vh;
+    }
+
+    .swiper-box {
+        padding-top: 10%;
+    }
+
+    .tab {
+        display: none;
+    }
+    .tab-f {
+        display: none;
+    }
+    .dest {
+        display: block;
+    }
+    .dest-f {
+        display: flex;
+    }
+
     .card-box__item-1 {
-    
-       
-        font-size: 27px;
         line-height: 137%;
         letter-spacing: 0.02em;
     }
     .card-box__item-2 {
-        
-       
-        font-size: 27px;
+
         line-height: 137%;
         letter-spacing: 0.02em;
     }
     .card-box__item-3 {
-        
-       
-        font-size: 27px;
+
         line-height: 137%;
         letter-spacing: 0.02em;
     }
